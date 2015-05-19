@@ -106,12 +106,11 @@ class Game < Gosu::Window
     @tree = Tree.new(self, 0xFF000000, 10, Screen::WIDTH / 2, 2)
         
     self.caption = "Basic Recursion Tree"
-    # Gosu and Moot Logos
-    @mootlogo = Gosu::Image.new(self, "media/moot.png", false)    
+    # Gosu Logo
     @gosulogo = Gosu::Image.new(self, "media/gosu_logo.png", false)
     
     @text = Gosu::Font.new(self, 'media/bitlow.ttf', 10)
-    @colors = {:white => Gosu::white, :gray => Gosu::gray}
+    @colors = {:white => 0xFFFFFFFF, :gray => 0xFF333333}
   end
   
   def update
@@ -129,7 +128,6 @@ class Game < Gosu::Window
     
     # Drawing the Logos
     @gosulogo.draw(10, Screen::HEIGHT - 43, 1)
-    @mootlogo.draw(Screen::WIDTH - 83, Screen::HEIGHT - 43, 1)
     @text.draw("PRESS SPACE TO GENERATE A NEW TREE", 10, 10, 1, 1.5, 1.5, 0xFF000000)
   end
   
