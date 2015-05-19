@@ -1,5 +1,5 @@
 # Fractal Trees
-Very simplisitc tractal tree generator, fun to watch not much else though.
+Very simple fractal tree generator, fun to watch not much else though.
 
 
 ## Requirements
